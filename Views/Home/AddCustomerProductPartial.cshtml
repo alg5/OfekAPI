@@ -1,0 +1,21 @@
+﻿
+@*<div class="container"></div>*@
+    <form action="">
+        <h2 class="display-4">הזמנה חדשה</h2>
+        <div class="add-product-row">
+            @await Component.InvokeAsync("ProductList")
+            <span id="productListError" class="error">חסר סוג מוצר</span>
+        </div>
+        <div class="add-product-row">
+            <input type="number" id="accountNumber" name="accountNumber" placeholder="חשבון" required maxlength="10" />
+            <span id="accountNumberError" class="error">qwerty2</span>
+        </div>
+        <div class="add-product-row">
+            <input type="number" id="sum" name="sum" placeholder="סכום" required maxlength="10" />
+            <span id="sumError" class="error">qwerty3</span>
+        </div>
+        <div class="add-product-row">
+            <button type="button" onclick="save()">אישור</button> <button type="button" onclick="cancel()">ביטול</button>
+        </div>
+    </form>
+

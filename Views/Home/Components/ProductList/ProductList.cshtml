@@ -1,0 +1,12 @@
+﻿@{
+    @model IEnumerable<Product>
+}
+@*asp-for="Product.ProductID"*@
+    <select  name="products" id="products">
+        <option value="-1">  בחר סוג מוצר </option>
+        @foreach (Product item in Model)
+        {
+            <option value="@item.ProductID" >@Html.DisplayFor(modelItem => item.FinanceInstitue)/@Html.DisplayFor(modelItem => item.ProductType)/@Html.DisplayFor(modelItem => item.InvestType) 
+            </option>
+        }
+    </select>

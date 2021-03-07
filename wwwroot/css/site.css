@@ -1,0 +1,182 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  direction:rtl;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+/*******************/
+h2.display-4{
+    font-size: 1.5rem !important;
+    color:white;
+}
+.container {
+    direction: rtl;
+    text-align: right;
+    background: #2cd5c4;
+}
+.tbl-container {
+    background: white;
+    border: 1px solid white;
+}
+table {
+    width: 100%;
+    border-spacing: 1px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background: white;
+}
+
+th {
+    text-align: right !important;
+    font-weight: bold;
+    font-size: 14px;
+    border-top: none;
+    background: #e7e5e5;
+}
+
+td {
+    background: #f8f8f8;
+}
+
+    td:hover {
+        background: #f4f4f4;
+    }
+
+td, th {
+    padding: 0 10px !important;
+}
+.customer-product-actions {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+    background-color: #f8f8f8;
+}
+.add-product-row{
+    padding: 5px 6px;
+    width:200px;
+}
+    .add-product-row input, .add-product-row select {
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+        border-width: 1px;
+        border-color: #cccccc;
+        background-color: #f2eded;
+        color: #000000;
+        border-style: solid;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+        text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+       
+    }
+
+        .add-product-row input:focus, .add-product-row select {
+            outline: none;
+        }
+    .add-product-row button {
+        box-shadow: inset 0px 1px 0px 0px #ffffff;
+        background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+        background-color: #ededed;
+        border-radius: 6px;
+        border: 1px solid #dcdcdc;
+        display: inline-block;
+        cursor: pointer;
+        color: #777777;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #ffffff;
+        border: 1px solid red;
+    }
+
+    .add-product-row button:hover {
+        background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+        background-color: #dfdfdf;
+    }
+
+    .add-product-row button:active {
+        position: relative;
+        top: 1px;
+    }
+
+.customer-products-list, .add-customer-product {
+    display: none;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    display: none;
+}
+
+       
+

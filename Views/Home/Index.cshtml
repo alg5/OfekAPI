@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    @model IEnumerable<Customer>
+}
+
+<div class="container customers-list">
+    <h2 class="display-4">ראשימת לקוחות</h2>
+    <div class="tbl-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+                    <th>@Html.DisplayNameFor(model => model.City)</th>
+                    <th>@Html.DisplayNameFor(model => model.Street)</th>
+                    <th>@Html.DisplayNameFor(model => model.PrivateEMail)</th>
+                    <th>@Html.DisplayNameFor(model => model.BirthDate)</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Customer item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirstName)
+                            @Html.DisplayFor(modelItem => item.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.City)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Street)
+                            @Html.DisplayFor(modelItem => item.HouseNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PrivateEMail)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BirthDate)
+                        </td>
+                        <td>
+                            <a onclick="getCustomerProducts(event, '@item.CustomerID')" href="javascript:void(0)">הזמנות</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<div class="container customer-products-list">
+    @{await Html.RenderPartialAsync("CustomerProductsPartial", new CustomerProduct());}
+</div>
+<div class="container add-customer-product">
+    @{await Html.RenderPartialAsync("AddCustomerProductPartial");}
+</div>
+
+
+
+

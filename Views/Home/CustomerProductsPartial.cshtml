@@ -1,0 +1,28 @@
+﻿
+@{
+    @model CustomerProduct
+}
+    <h2 class="display-4">הזמנות של <span class="first-name"></span>&nbsp;<span class="last-name"></span> </h2>
+    <div class="tbl-container">
+        <table id="tblCustomerProducts">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.customer.FirstName)</th>
+                    <th>@Html.DisplayNameFor(model => model.product.ProductType)</th>
+                    <th>@Html.DisplayNameFor(model => model.product.FinanceInstitue)</th>
+                    <th>@Html.DisplayNameFor(model => model.AccountNumber)</th>
+                    <th>@Html.DisplayNameFor(model => model.Sum)</th>
+                    <th>@Html.DisplayNameFor(model => model.Status)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+
+        </table>
+        <div class="customer-product-actions">
+            <a id="add-customer-product-link" onclick="addCustomerProduct(event);" href="javascript:void(0)">הזמנה חדשה</a>
+            <a onclick="backToCustomres(event);" href="javascript:void(0)">חזרה לראשימת לקוחות</a>
+        </div>
+
+    </div>
+
